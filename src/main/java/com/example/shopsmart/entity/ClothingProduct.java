@@ -1,34 +1,23 @@
 package com.example.shopsmart.entity;
-
-import jakarta.persistence.DiscriminatorValue;
-import jakarta.persistence.Entity;
+import com.example.shopsmart.enums.Size;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
 @DiscriminatorValue("CLOTHING")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 public class ClothingProduct extends Product {
 
-    private String size;
+    @Enumerated(EnumType.STRING)
+    private Size size;
 
     private String color;
 
     @Override
     public double calculateFinalPrice() {
-        return getBasePrice();
-    }
-
-    public String getSize() {
-        return size;
-    }
-
-    public void setSize(String size) {
-        this.size = size;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
+        return getBasePrice(); // no extra fee
     }
 }
