@@ -1,5 +1,4 @@
 package com.example.shopsmart.controller;
-
 import com.example.shopsmart.dto.CreateProductRequest;
 import com.example.shopsmart.entity.*;
 import com.example.shopsmart.enums.Size;
@@ -13,9 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/products")
 public class ProductController {
-
     private final ProductService productService;
-
     @Autowired
     public ProductController(ProductService productService) {
         this.productService = productService;
@@ -52,30 +49,26 @@ public class ProductController {
     @PostMapping
     public ResponseEntity<Product> create(@Valid @RequestBody CreateProductRequest req) {
         Product product;
-
         if ("ELECTRONICS".equalsIgnoreCase(req.getType())) {
-            // Electronics product banao
+            // Electronics product banaya
             ElectronicsProduct ep = new ElectronicsProduct();
             ep.setWarrantyMonths(req.getWarrantyMonths());
             product = ep;
         } else {
-            // Clothing product banao
+            // Clothing product banaya
             ClothingProduct cp = new ClothingProduct();
             cp.setSize(Size.valueOf(req.getSize().toUpperCase()));
             cp.setColor(req.getColor());
             product = cp;
         }
 
-        // common fields set karo
+        // common fields set kia
         product.setName(req.getName());
         product.setBasePrice(req.getBasePrice());
         product.setCategory(req.getCategory());
         product.setStockQuantity(req.getStockQuantity());
-
-        return ResponseEntity.status(HttpStatus.CREATED)
-                .body(productService.saveProduct(product));
+        return ResponseEntity.status(HttpStatus.CREATED).body(productService.saveProduct(product));
     }
-
     // PUT /api/products/5
     @PutMapping("/{id}")
     public ResponseEntity<Product> update(@PathVariable Long id, @RequestBody CreateProductRequest req) {
@@ -86,7 +79,6 @@ public class ProductController {
         existing.setStockQuantity(req.getStockQuantity());
         return ResponseEntity.ok(productService.saveProduct(existing));
     }
-
     // DELETE /api/products/5
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {

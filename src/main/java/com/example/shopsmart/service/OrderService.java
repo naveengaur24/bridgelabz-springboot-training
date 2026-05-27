@@ -30,20 +30,20 @@ public class OrderService {
 
     public Order createOrder(Long customerId, List<OrderItem> items, String paymentType) {
 
-        // Step 1: Customer exist karta hai?
+        // Customer exist karta hai..
         Customer customer = customerRepository.findById(customerId)
                 .orElseThrow(() -> new InvalidOrderException("Customer not found: " + customerId));
 
         double total = 0;
 
-        // Step 2: Har item ke liye product check karo
+        //  Har item ke liye product check kia
         for (OrderItem item : items) {
 
-            // product database se lao (real product, poori info ke saath)
+            // product database se laya (real product, poori info ke saath)
             Product product = productRepository.findById(item.getProduct().getId())
                     .orElseThrow(() -> new ProductNotFoundException(item.getProduct().getId()));
 
-            // stock enough hai?
+            // stock enough hai ya ni check
             if (product.getStockQuantity() < item.getQuantity()) {
                 throw new InsufficientStockException(product.getName(), product.getStockQuantity());
             }
@@ -51,27 +51,21 @@ public class OrderService {
             // stock ghatao
             product.setStockQuantity(product.getStockQuantity() - item.getQuantity());
             productRepository.save(product);
-
             // purchase time ka price set karo
             item.setPriceAtPurchase(product.calculateFinalPrice());
-
             // total calculate karo
             total += product.calculateFinalPrice() * item.getQuantity();
         }
-
-        // Step 3: Order banao aur save karo
+        //  Order banaya and save kia..
         Order order = Order.builder()
                 .customer(customer)
                 .items(items)
                 .status(OrderStatus.PENDING)
                 .totalAmount(total)
                 .build();
-
         Order saved = orderRepository.save(order);
-
-        // Step 4: Async notification bhejo
+        // Async notification bheja..
         notificationService.sendOrderConfirmation(saved);
-
         return saved;
     }
 
@@ -80,7 +74,7 @@ public class OrderService {
                 .orElseThrow(() -> new InvalidOrderException("Order not found: " + id));
     }
 
-    // pagination ke saath — page number aur size lo
+    // pagination ke saath — page number aur size lia..
     public Page<Order> getOrdersByCustomer(Long customerId, int page, int size) {
         return orderRepository.findByCustomerId(customerId, PageRequest.of(page, size));
     }

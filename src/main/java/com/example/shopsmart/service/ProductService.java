@@ -18,7 +18,7 @@ public class ProductService {
         this.productRepository = productRepository;
     }
 
-    // saare products lao
+    // saare products layega
     public List<Product> getAllProducts() {
         return productRepository.findAll();
     }
@@ -39,14 +39,14 @@ public class ProductService {
         return productRepository.searchProducts(name, min, max);
     }
 
-    // naya product save karo
+    // naya product save kia
     public Product saveProduct(Product product) {
         return productRepository.save(product);
     }
 
-    // existing product update karo
+    // existing product update kia
     public Product updateProduct(Long id, Product updated) {
-        Product existing = getProductById(id); // pehle check karo exist karta hai
+        Product existing = getProductById(id); // pehle check karega exist karta hai
         existing.setName(updated.getName());
         existing.setBasePrice(updated.getBasePrice());
         existing.setStockQuantity(updated.getStockQuantity());
@@ -54,9 +54,9 @@ public class ProductService {
         return productRepository.save(existing);
     }
 
-    // product delete karo
+    // product delete karega
     public void deleteProduct(Long id) {
-        getProductById(id); // pehle check karo exist karta hai
+        getProductById(id); // pehle check karega exist karta hai
         productRepository.deleteById(id);
     }
 }

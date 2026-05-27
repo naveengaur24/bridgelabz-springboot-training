@@ -1,5 +1,4 @@
 package com.example.shopsmart.controller;
-
 import com.example.shopsmart.dto.CreateOrderRequest;
 import com.example.shopsmart.entity.*;
 import com.example.shopsmart.enums.OrderStatus;
@@ -23,8 +22,7 @@ public class OrderController {
     private final ProductRepository productRepository;
 
     @Autowired
-    public OrderController(OrderService orderService,
-                           ProductRepository productRepository) {
+    public OrderController(OrderService orderService, ProductRepository productRepository) {
         this.orderService = orderService;
         this.productRepository = productRepository;
     }
@@ -32,13 +30,11 @@ public class OrderController {
     // POST /api/orders
     @PostMapping
     public ResponseEntity<Order> createOrder(@Valid @RequestBody CreateOrderRequest req) {
-
-        // Request se OrderItem list banao
+        // Request se OrderItem list baanayenge
         List<OrderItem> items = req.getItems().stream().map(i -> {
-            // Sirf ID set karo — OrderService mein puri info fetch hogi
+            // Sirf ID set karenge — OrderService mein puri info fetch hogi
             Product p = productRepository.findById(i.getProductId())
                     .orElseThrow(() -> new RuntimeException("Product not found: " + i.getProductId()));
-
             return OrderItem.builder()
                     .product(p)
                     .quantity(i.getQuantity())
@@ -66,8 +62,7 @@ public class OrderController {
 
     // PUT /api/orders/5/status?status=CONFIRMED
     @PutMapping("/{id}/status")
-    public ResponseEntity<Order> updateStatus(@PathVariable Long id,
-                                              @RequestParam String status) {
+    public ResponseEntity<Order> updateStatus(@PathVariable Long id, @RequestParam String status) {
         return ResponseEntity.ok(orderService.updateStatus(id, OrderStatus.valueOf(status.toUpperCase())));
     }
 
