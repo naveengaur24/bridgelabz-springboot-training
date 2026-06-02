@@ -116,6 +116,25 @@ export const NoteCard = ({ note, onNoteClick, onNoteUpdated, showToastMessage })
         {note.labels && Array.from(note.labels).map((label) => (
           <div key={label.id} className="keep-chip">
             <span>{label.name}</span>
+            <button
+              className="chip-delete"
+              title="Remove label"
+              onClick={async (e) => {
+                e.stopPropagation(); // Prevent opening the note edit modal
+                try {
+                  const res = await ApiService.removeLabelFromNote(note.id, label.id);
+                  if (res.success) {
+                    showToastMessage('Label removed from note');
+                    onNoteUpdated();
+                  }
+                } catch (err) {
+                  console.error(err);
+                  showToastMessage('Failed to remove label', true);
+                }
+              }}
+            >
+              <i className="bi bi-x"></i>
+            </button>
           </div>
         ))}
       </div>

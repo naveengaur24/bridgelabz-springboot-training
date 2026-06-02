@@ -267,7 +267,14 @@ export const Dashboard = () => {
         isOpen={labelsModalOpen}
         onClose={() => setLabelsModalOpen(false)}
         labels={labels}
-        onLabelsUpdated={() => { fetchLabels(); fetchNotes(); }}
+        onLabelsUpdated={(deletedLabelId) => {
+          fetchLabels();
+          fetchNotes();
+          if (activeLabelId === deletedLabelId) {
+            setActiveView('notes');
+            setActiveLabelId(null);
+          }
+        }}
         showToastMessage={triggerToast}
       />
 

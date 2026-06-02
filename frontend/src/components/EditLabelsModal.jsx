@@ -27,7 +27,7 @@ export const EditLabelsModal = ({ isOpen, onClose, labels, onLabelsUpdated, show
         const response = await ApiService.deleteLabel(labelId);
         if (response.success) {
           showToastMessage('Label deleted');
-          onLabelsUpdated();
+          onLabelsUpdated(labelId);
         }
       } catch (err) {
         console.error(err);
