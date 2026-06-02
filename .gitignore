@@ -1,0 +1,48 @@
+# GitIgnore for Fundoo Notes Monorepo
+
+# ==========================================
+# ☕ Backend (Spring Boot)
+# ==========================================
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/.classpath
+backend/.project
+backend/.factorypath
+backend/.settings/
+backend/.springBeans
+backend/.sts4-cache
+backend/logs/
+
+# ==========================================
+# ⚡ Frontend (React + Vite + Node)
+# ==========================================
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+frontend/.eslintcache
+
+# ==========================================
+# ⚙️ General & IDEs
+# ==========================================
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.DS_Store
+Thumbs.db
+*.zip
+*.tar.gz
+
+# ==========================================
+# 🔒 Security & Environment Secrets
+# ==========================================
+.env
+.env.local
+.env.development
+.env.production
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*

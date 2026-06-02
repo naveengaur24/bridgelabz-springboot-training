@@ -1,0 +1,389 @@
+2026-06-02T14:16:47.637+05:30  INFO 1344 --- [fundoo-notes] [main] c.f.fundoo_notes.FundooNotesApplication  : Starting FundooNotesApplication using Java 20.0.1 with PID 1344 (C:\fundoo-notes\fundoo-notes\target\classes started by HP in C:\fundoo-notes\fundoo-notes)
+2026-06-02T14:16:47.650+05:30 DEBUG 1344 --- [fundoo-notes] [main] c.f.fundoo_notes.FundooNotesApplication  : Running with Spring Boot v3.5.4, Spring v6.2.9
+2026-06-02T14:16:47.651+05:30  INFO 1344 --- [fundoo-notes] [main] c.f.fundoo_notes.FundooNotesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-02T14:16:48.975+05:30  INFO 1344 --- [fundoo-notes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-06-02T14:16:48.976+05:30  INFO 1344 --- [fundoo-notes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-02T14:16:49.175+05:30  INFO 1344 --- [fundoo-notes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 184 ms. Found 4 JPA repository interfaces.
+2026-06-02T14:16:49.206+05:30  INFO 1344 --- [fundoo-notes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-06-02T14:16:49.210+05:30  INFO 1344 --- [fundoo-notes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-06-02T14:16:49.236+05:30  INFO 1344 --- [fundoo-notes] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fundoonotes.fundoo_notes.repository.LabelRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-06-02T14:16:49.236+05:30  INFO 1344 --- [fundoo-notes] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fundoonotes.fundoo_notes.repository.NoteRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-06-02T14:16:49.236+05:30  INFO 1344 --- [fundoo-notes] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fundoonotes.fundoo_notes.repository.OtpRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-06-02T14:16:49.237+05:30  INFO 1344 --- [fundoo-notes] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fundoonotes.fundoo_notes.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-06-02T14:16:49.237+05:30  INFO 1344 --- [fundoo-notes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2026-06-02T14:16:50.277+05:30  INFO 1344 --- [fundoo-notes] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-02T14:16:50.301+05:30  INFO 1344 --- [fundoo-notes] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-02T14:16:50.302+05:30  INFO 1344 --- [fundoo-notes] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-06-02T14:16:50.375+05:30  INFO 1344 --- [fundoo-notes] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-02T14:16:50.376+05:30  INFO 1344 --- [fundoo-notes] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2634 ms
+2026-06-02T14:16:50.444+05:30 DEBUG 1344 --- [fundoo-notes] [main] c.f.fundoo_notes.filter.JwtFilter        : Filter 'jwtFilter' configured for use
+2026-06-02T14:16:50.629+05:30  INFO 1344 --- [fundoo-notes] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-02T14:16:50.701+05:30  INFO 1344 --- [fundoo-notes] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2026-06-02T14:16:50.747+05:30  INFO 1344 --- [fundoo-notes] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-02T14:16:51.154+05:30  INFO 1344 --- [fundoo-notes] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-02T14:16:51.189+05:30  INFO 1344 --- [fundoo-notes] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-02T14:16:51.782+05:30  INFO 1344 --- [fundoo-notes] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@297c3a43
+2026-06-02T14:16:51.785+05:30  INFO 1344 --- [fundoo-notes] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-02T14:16:51.899+05:30  INFO 1344 --- [fundoo-notes] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-02T14:16:52.848+05:30  INFO 1344 --- [fundoo-notes] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-02T14:16:53.032+05:30  INFO 1344 --- [fundoo-notes] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02T14:16:53.438+05:30  INFO 1344 --- [fundoo-notes] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-02T14:16:55.558+05:30  WARN 1344 --- [fundoo-notes] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: aa7985cd-a7e1-43b0-8f27-25399c36842a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-02T14:16:55.571+05:30  INFO 1344 --- [fundoo-notes] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-02T14:16:56.019+05:30  INFO 1344 --- [fundoo-notes] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-06-02T14:16:56.022+05:30  INFO 1344 --- [fundoo-notes] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-06-02T14:16:56.374+05:30  INFO 1344 --- [fundoo-notes] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#191fe3e3:0/SimpleConnection@47e4126a [delegate=amqp://guest@127.0.0.1:5672/, localPort=56228]
+2026-06-02T14:16:56.519+05:30  INFO 1344 --- [fundoo-notes] [main] c.f.fundoo_notes.FundooNotesApplication  : Started FundooNotesApplication in 9.56 seconds (process running for 10.179)
+2026-06-02T14:16:56.533+05:30  INFO 1344 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:16:56.533772600
+2026-06-02T14:16:56.680+05:30  INFO 1344 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:17:37.096+05:30  INFO 1344 --- [fundoo-notes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2026-06-02T14:17:37.920+05:30  INFO 1344 --- [fundoo-notes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2026-06-02T14:17:37.921+05:30  INFO 1344 --- [fundoo-notes] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-02T14:17:38.007+05:30  INFO 1344 --- [fundoo-notes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-06-02T14:17:38.038+05:30  INFO 1344 --- [fundoo-notes] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02T14:17:38.042+05:30  INFO 1344 --- [fundoo-notes] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-02T14:17:38.052+05:30  INFO 1344 --- [fundoo-notes] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-02T14:17:47.763+05:30  INFO 22476 --- [fundoo-notes] [main] c.f.fundoo_notes.FundooNotesApplication  : Starting FundooNotesApplication using Java 20.0.1 with PID 22476 (C:\fundoo-notes\fundoo-notes\target\classes started by HP in C:\fundoo-notes\fundoo-notes)
+2026-06-02T14:17:47.771+05:30 DEBUG 22476 --- [fundoo-notes] [main] c.f.fundoo_notes.FundooNotesApplication  : Running with Spring Boot v3.5.4, Spring v6.2.9
+2026-06-02T14:17:47.772+05:30  INFO 22476 --- [fundoo-notes] [main] c.f.fundoo_notes.FundooNotesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-06-02T14:17:48.828+05:30  INFO 22476 --- [fundoo-notes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-06-02T14:17:48.831+05:30  INFO 22476 --- [fundoo-notes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-02T14:17:48.976+05:30  INFO 22476 --- [fundoo-notes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 4 JPA repository interfaces.
+2026-06-02T14:17:49.002+05:30  INFO 22476 --- [fundoo-notes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-06-02T14:17:49.004+05:30  INFO 22476 --- [fundoo-notes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-06-02T14:17:49.030+05:30  INFO 22476 --- [fundoo-notes] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fundoonotes.fundoo_notes.repository.LabelRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-06-02T14:17:49.031+05:30  INFO 22476 --- [fundoo-notes] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fundoonotes.fundoo_notes.repository.NoteRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-06-02T14:17:49.032+05:30  INFO 22476 --- [fundoo-notes] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fundoonotes.fundoo_notes.repository.OtpRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-06-02T14:17:49.034+05:30  INFO 22476 --- [fundoo-notes] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.fundoonotes.fundoo_notes.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-06-02T14:17:49.034+05:30  INFO 22476 --- [fundoo-notes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2026-06-02T14:17:49.934+05:30  INFO 22476 --- [fundoo-notes] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-02T14:17:49.957+05:30  INFO 22476 --- [fundoo-notes] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-02T14:17:49.957+05:30  INFO 22476 --- [fundoo-notes] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-06-02T14:17:50.024+05:30  INFO 22476 --- [fundoo-notes] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-02T14:17:50.025+05:30  INFO 22476 --- [fundoo-notes] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2174 ms
+2026-06-02T14:17:50.083+05:30 DEBUG 22476 --- [fundoo-notes] [main] c.f.fundoo_notes.filter.JwtFilter        : Filter 'jwtFilter' configured for use
+2026-06-02T14:17:50.305+05:30  INFO 22476 --- [fundoo-notes] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-02T14:17:50.387+05:30  INFO 22476 --- [fundoo-notes] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2026-06-02T14:17:50.434+05:30  INFO 22476 --- [fundoo-notes] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-02T14:17:50.804+05:30  INFO 22476 --- [fundoo-notes] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-02T14:17:50.830+05:30  INFO 22476 --- [fundoo-notes] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-02T14:17:51.232+05:30  INFO 22476 --- [fundoo-notes] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f1fec57
+2026-06-02T14:17:51.235+05:30  INFO 22476 --- [fundoo-notes] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-02T14:17:51.317+05:30  INFO 22476 --- [fundoo-notes] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-02T14:17:52.253+05:30  INFO 22476 --- [fundoo-notes] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-02T14:17:52.344+05:30  INFO 22476 --- [fundoo-notes] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02T14:17:52.747+05:30  INFO 22476 --- [fundoo-notes] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-02T14:17:54.674+05:30  WARN 22476 --- [fundoo-notes] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4515c943-6c36-48a0-8648-56eb114e1c83
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-02T14:17:54.691+05:30  INFO 22476 --- [fundoo-notes] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-02T14:17:55.318+05:30  INFO 22476 --- [fundoo-notes] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-06-02T14:17:55.322+05:30  INFO 22476 --- [fundoo-notes] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-06-02T14:17:55.381+05:30  INFO 22476 --- [fundoo-notes] [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7dbafe9d:0/SimpleConnection@6c3d3d83 [delegate=amqp://guest@127.0.0.1:5672/, localPort=59576]
+2026-06-02T14:17:55.442+05:30  INFO 22476 --- [fundoo-notes] [main] c.f.fundoo_notes.FundooNotesApplication  : Started FundooNotesApplication in 8.272 seconds (process running for 8.709)
+2026-06-02T14:17:55.462+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:17:55.462175200
+2026-06-02T14:17:55.561+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:18:55.451+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:18:55.451804600
+2026-06-02T14:18:55.455+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:19:00.985+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-02T14:19:00.985+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-02T14:19:00.987+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-02T14:19:01.069+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-2] c.f.fundoo_notes.filter.JwtFilter        : Auth header: null
+2026-06-02T14:19:01.196+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-2] c.f.f.s.implementation.UserServiceImpl   : Login request came : yash.raj17182003@gmail.com
+2026-06-02T14:19:01.327+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-2] c.f.f.s.implementation.UserServiceImpl   : Token generated for: yash.raj17182003@gmail.com
+2026-06-02T14:19:01.430+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDEsImV4cCI6MTc4MDQ3NjU0MX0.6ILqHI84MIap8dGJ8I8KwO7eWYlV-CHPVhBf0f98ba8
+2026-06-02T14:19:01.430+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDEsImV4cCI6MTc4MDQ3NjU0MX0.6ILqHI84MIap8dGJ8I8KwO7eWYlV-CHPVhBf0f98ba8
+2026-06-02T14:19:01.430+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDEsImV4cCI6MTc4MDQ3NjU0MX0.6ILqHI84MIap8dGJ8I8KwO7eWYlV-CHPVhBf0f98ba8
+2026-06-02T14:19:01.431+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDEsImV4cCI6MTc4MDQ3NjU0MX0.6ILqHI84MIap8dGJ8I8KwO7eWYlV-CHPVhBf0f98ba8
+2026-06-02T14:19:01.460+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 14
+2026-06-02T14:19:01.460+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 14
+2026-06-02T14:19:01.460+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 14
+2026-06-02T14:19:01.460+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 14
+2026-06-02T14:19:01.462+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.f.controller.NoteController          : Get all notes for userId: 14
+2026-06-02T14:19:01.462+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.f.controller.LabelController         : Get all labels for userId: 14
+2026-06-02T14:19:01.463+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.f.s.implementation.LabelServiceImpl  : Fetching all labels for userId: 14
+2026-06-02T14:19:01.465+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 14
+2026-06-02T14:19:01.502+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDEsImV4cCI6MTc4MDQ3NjU0MX0.6ILqHI84MIap8dGJ8I8KwO7eWYlV-CHPVhBf0f98ba8
+2026-06-02T14:19:01.502+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDEsImV4cCI6MTc4MDQ3NjU0MX0.6ILqHI84MIap8dGJ8I8KwO7eWYlV-CHPVhBf0f98ba8
+2026-06-02T14:19:01.507+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 14
+2026-06-02T14:19:01.507+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 14
+2026-06-02T14:19:01.508+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.f.controller.LabelController         : Get all labels for userId: 14
+2026-06-02T14:19:01.508+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.f.s.implementation.LabelServiceImpl  : Fetching all labels for userId: 14
+2026-06-02T14:19:01.567+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDEsImV4cCI6MTc4MDQ3NjU0MX0.6ILqHI84MIap8dGJ8I8KwO7eWYlV-CHPVhBf0f98ba8
+2026-06-02T14:19:01.568+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDEsImV4cCI6MTc4MDQ3NjU0MX0.6ILqHI84MIap8dGJ8I8KwO7eWYlV-CHPVhBf0f98ba8
+2026-06-02T14:19:01.572+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 14
+2026-06-02T14:19:01.572+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 14
+2026-06-02T14:19:01.573+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.f.controller.NoteController          : Get all notes for userId: 14
+2026-06-02T14:19:01.574+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 14
+2026-06-02T14:19:09.049+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-2] c.f.fundoo_notes.filter.JwtFilter        : Auth header: null
+2026-06-02T14:19:09.053+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-2] c.f.f.s.implementation.UserServiceImpl   : Login request came : yash.raj17182003@gmail.com
+2026-06-02T14:19:09.061+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-2] c.f.f.s.implementation.UserServiceImpl   : Token generated for: yash.raj17182003@gmail.com
+2026-06-02T14:19:09.084+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDksImV4cCI6MTc4MDQ3NjU0OX0.IQ4pB8xu1foRg7xTcQckpzIKE_CVnQcY3cGoVTGl-zY
+2026-06-02T14:19:09.084+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDksImV4cCI6MTc4MDQ3NjU0OX0.IQ4pB8xu1foRg7xTcQckpzIKE_CVnQcY3cGoVTGl-zY
+2026-06-02T14:19:09.085+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDksImV4cCI6MTc4MDQ3NjU0OX0.IQ4pB8xu1foRg7xTcQckpzIKE_CVnQcY3cGoVTGl-zY
+2026-06-02T14:19:09.085+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDksImV4cCI6MTc4MDQ3NjU0OX0.IQ4pB8xu1foRg7xTcQckpzIKE_CVnQcY3cGoVTGl-zY
+2026-06-02T14:19:09.089+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 14
+2026-06-02T14:19:09.089+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 14
+2026-06-02T14:19:09.089+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 14
+2026-06-02T14:19:09.089+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 14
+2026-06-02T14:19:09.089+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.f.controller.LabelController         : Get all labels for userId: 14
+2026-06-02T14:19:09.090+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.f.controller.NoteController          : Get all notes for userId: 14
+2026-06-02T14:19:09.090+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.f.s.implementation.LabelServiceImpl  : Fetching all labels for userId: 14
+2026-06-02T14:19:09.092+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 14
+2026-06-02T14:19:09.099+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDksImV4cCI6MTc4MDQ3NjU0OX0.IQ4pB8xu1foRg7xTcQckpzIKE_CVnQcY3cGoVTGl-zY
+2026-06-02T14:19:09.099+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDksImV4cCI6MTc4MDQ3NjU0OX0.IQ4pB8xu1foRg7xTcQckpzIKE_CVnQcY3cGoVTGl-zY
+2026-06-02T14:19:09.103+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 14
+2026-06-02T14:19:09.103+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 14
+2026-06-02T14:19:09.103+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.f.controller.LabelController         : Get all labels for userId: 14
+2026-06-02T14:19:09.103+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDksImV4cCI6MTc4MDQ3NjU0OX0.IQ4pB8xu1foRg7xTcQckpzIKE_CVnQcY3cGoVTGl-zY
+2026-06-02T14:19:09.103+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.f.s.implementation.LabelServiceImpl  : Fetching all labels for userId: 14
+2026-06-02T14:19:09.103+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDksImV4cCI6MTc4MDQ3NjU0OX0.IQ4pB8xu1foRg7xTcQckpzIKE_CVnQcY3cGoVTGl-zY
+2026-06-02T14:19:09.109+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 14
+2026-06-02T14:19:09.109+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 14
+2026-06-02T14:19:09.109+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.f.controller.NoteController          : Get all notes for userId: 14
+2026-06-02T14:19:09.109+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 14
+2026-06-02T14:19:13.827+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-2] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDksImV4cCI6MTc4MDQ3NjU0OX0.IQ4pB8xu1foRg7xTcQckpzIKE_CVnQcY3cGoVTGl-zY
+2026-06-02T14:19:13.827+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-2] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNCIsImVtYWlsIjoieWFzaC5yYWoxNzE4MjAwM0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNDksImV4cCI6MTc4MDQ3NjU0OX0.IQ4pB8xu1foRg7xTcQckpzIKE_CVnQcY3cGoVTGl-zY
+2026-06-02T14:19:13.830+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-2] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 14
+2026-06-02T14:19:13.830+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-2] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 14
+2026-06-02T14:19:13.830+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-2] c.f.f.controller.UserController          : Delete user request for userId: 14
+2026-06-02T14:19:13.830+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-2] c.f.f.s.implementation.UserServiceImpl   : Deleting user with id: 14
+2026-06-02T14:19:13.949+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-2] c.f.f.s.implementation.UserServiceImpl   : User deleted with id: 14
+2026-06-02T14:19:16.563+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.fundoo_notes.filter.JwtFilter        : Auth header: null
+2026-06-02T14:19:16.572+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.f.s.implementation.UserServiceImpl   : Login request came : yash.raj17182003@gmail.com
+2026-06-02T14:19:16.573+05:30  WARN 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.f.s.implementation.UserServiceImpl   : User not found : yash.raj17182003@gmail.com
+2026-06-02T14:19:33.229+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.fundoo_notes.filter.JwtFilter        : Auth header: null
+2026-06-02T14:19:33.327+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.f.s.implementation.UserServiceImpl   : Register request aaya: naveengaur343@gmail.com
+2026-06-02T14:19:33.436+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.f.s.implementation.UserServiceImpl   : User saved with id: 18
+2026-06-02T14:19:36.355+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : Auth header: null
+2026-06-02T14:19:36.355+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.f.s.implementation.UserServiceImpl   : Login request came : naveengaur343@gmail.com
+2026-06-02T14:19:36.362+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.f.s.implementation.UserServiceImpl   : Token generated for: naveengaur343@gmail.com
+2026-06-02T14:19:36.383+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:19:36.383+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:19:36.383+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:19:36.383+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:19:36.392+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:19:36.392+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:19:36.392+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:19:36.392+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:19:36.392+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.f.controller.NoteController          : Get all notes for userId: 18
+2026-06-02T14:19:36.392+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.f.controller.LabelController         : Get all labels for userId: 18
+2026-06-02T14:19:36.392+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.f.s.implementation.LabelServiceImpl  : Fetching all labels for userId: 18
+2026-06-02T14:19:36.394+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 18
+2026-06-02T14:19:36.400+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:19:36.400+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:19:36.402+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:19:36.402+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:19:36.404+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:19:36.404+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:19:36.405+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.f.controller.LabelController         : Get all labels for userId: 18
+2026-06-02T14:19:36.405+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.f.s.implementation.LabelServiceImpl  : Fetching all labels for userId: 18
+2026-06-02T14:19:36.405+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:19:36.405+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:19:36.406+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.f.controller.NoteController          : Get all notes for userId: 18
+2026-06-02T14:19:36.406+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 18
+2026-06-02T14:19:55.454+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:19:55.454415500
+2026-06-02T14:19:55.459+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:19:59.479+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:19:59.479+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:19:59.487+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:19:59.488+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:19:59.499+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.f.controller.NoteController          : Create note request for userId: 18
+2026-06-02T14:19:59.499+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.f.s.implementation.NoteServiceImpl   : Creating note for userId: 18
+2026-06-02T14:19:59.504+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.f.s.implementation.NoteServiceImpl   : Reminder set for: 2026-06-02T14:20
+2026-06-02T14:19:59.512+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.f.s.implementation.NoteServiceImpl   : Note created with id: 46
+2026-06-02T14:19:59.531+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:19:59.531+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:19:59.534+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:19:59.534+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:19:59.536+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.f.controller.NoteController          : Get all notes for userId: 18
+2026-06-02T14:19:59.537+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 18
+2026-06-02T14:20:03.297+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-1] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:03.297+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-1] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:03.301+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:03.301+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:03.301+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-1] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:20:03.301+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-1] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:20:03.301+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-1] c.f.f.controller.NoteController          : Get all notes for userId: 18
+2026-06-02T14:20:03.305+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-1] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 18
+2026-06-02T14:20:03.306+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:20:03.306+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:20:03.308+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.f.controller.LabelController         : Get all labels for userId: 18
+2026-06-02T14:20:03.309+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.f.s.implementation.LabelServiceImpl  : Fetching all labels for userId: 18
+2026-06-02T14:20:03.315+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:03.315+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:03.317+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:03.317+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:03.320+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:20:03.320+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:20:03.320+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.f.controller.LabelController         : Get all labels for userId: 18
+2026-06-02T14:20:03.321+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.f.s.implementation.LabelServiceImpl  : Fetching all labels for userId: 18
+2026-06-02T14:20:03.321+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:20:03.321+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:20:03.322+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.f.controller.NoteController          : Get all notes for userId: 18
+2026-06-02T14:20:03.323+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 18
+2026-06-02T14:20:15.761+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:15.761+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:15.766+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:20:15.766+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:20:15.777+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.f.s.implementation.NoteServiceImpl   : Updating note id: 46 for userId: 18
+2026-06-02T14:20:15.779+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.f.s.implementation.NoteServiceImpl   : Reminder updated for note: 46
+2026-06-02T14:20:15.792+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.f.s.implementation.NoteServiceImpl   : Note updated: 46
+2026-06-02T14:20:15.821+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:15.821+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:15.826+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:20:15.826+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:20:15.827+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.f.controller.NoteController          : Get all notes for userId: 18
+2026-06-02T14:20:15.827+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 18
+2026-06-02T14:20:19.114+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:19.115+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:19.117+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-1] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:19.117+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:20:19.117+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-1] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:19.117+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:20:19.119+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.f.controller.NoteController          : Get all notes for userId: 18
+2026-06-02T14:20:19.121+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-10] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 18
+2026-06-02T14:20:19.121+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-1] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:20:19.121+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-1] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:20:19.125+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-1] c.f.f.controller.LabelController         : Get all labels for userId: 18
+2026-06-02T14:20:19.125+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-1] c.f.f.s.implementation.LabelServiceImpl  : Fetching all labels for userId: 18
+2026-06-02T14:20:19.136+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:19.137+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:19.136+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:19.137+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAxNzYsImV4cCI6MTc4MDQ3NjU3Nn0.NLNDkhY9BRn_7fTEYIn3yWoz28-7QCzWeQQzYdrlTK4
+2026-06-02T14:20:19.140+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:20:19.140+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:20:19.140+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:20:19.140+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:20:19.141+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.f.controller.LabelController         : Get all labels for userId: 18
+2026-06-02T14:20:19.141+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.f.s.implementation.LabelServiceImpl  : Fetching all labels for userId: 18
+2026-06-02T14:20:19.141+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.f.controller.NoteController          : Get all notes for userId: 18
+2026-06-02T14:20:19.142+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 18
+2026-06-02T14:20:55.443+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:20:55.443425400
+2026-06-02T14:20:55.443+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:21:55.448+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:21:55.448145
+2026-06-02T14:21:55.490+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 1 pending reminders
+2026-06-02T14:21:55.752+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.EmailProducerImpl              : Email message sent to queue for: naveengaur343@gmail.com
+2026-06-02T14:21:55.754+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Reminder sent for note: 46 to: naveengaur343@gmail.com
+2026-06-02T14:21:55.831+05:30  INFO 22476 --- [fundoo-notes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.f.f.s.i.EmailConsumerImpl              : Email message received from queue for: naveengaur343@gmail.com
+2026-06-02T14:22:00.459+05:30  INFO 22476 --- [fundoo-notes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.f.f.s.implementation.EmailServiceImpl  : Email sent to: naveengaur343@gmail.com
+2026-06-02T14:22:00.459+05:30  INFO 22476 --- [fundoo-notes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.f.f.s.i.EmailConsumerImpl              : Email sent successfully to: naveengaur343@gmail.com
+2026-06-02T14:22:42.684+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.fundoo_notes.filter.JwtFilter        : Auth header: null
+2026-06-02T14:22:42.717+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.f.s.implementation.UserServiceImpl   : Login request came : naveengaur343@gmail.com
+2026-06-02T14:22:42.750+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.f.s.implementation.UserServiceImpl   : Token generated for: naveengaur343@gmail.com
+2026-06-02T14:22:42.787+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAzNjIsImV4cCI6MTc4MDQ3Njc2Mn0.IXHWqik9axaZGQk0uSrNeBdLL5d2BgKCbTlxkiiDzvI
+2026-06-02T14:22:42.787+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAzNjIsImV4cCI6MTc4MDQ3Njc2Mn0.IXHWqik9axaZGQk0uSrNeBdLL5d2BgKCbTlxkiiDzvI
+2026-06-02T14:22:42.788+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAzNjIsImV4cCI6MTc4MDQ3Njc2Mn0.IXHWqik9axaZGQk0uSrNeBdLL5d2BgKCbTlxkiiDzvI
+2026-06-02T14:22:42.788+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAzNjIsImV4cCI6MTc4MDQ3Njc2Mn0.IXHWqik9axaZGQk0uSrNeBdLL5d2BgKCbTlxkiiDzvI
+2026-06-02T14:22:42.792+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:22:42.792+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:22:42.793+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:22:42.793+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:22:42.794+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.f.controller.NoteController          : Get all notes for userId: 18
+2026-06-02T14:22:42.794+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.f.controller.LabelController         : Get all labels for userId: 18
+2026-06-02T14:22:42.795+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.f.s.implementation.LabelServiceImpl  : Fetching all labels for userId: 18
+2026-06-02T14:22:42.796+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 18
+2026-06-02T14:22:42.804+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAzNjIsImV4cCI6MTc4MDQ3Njc2Mn0.IXHWqik9axaZGQk0uSrNeBdLL5d2BgKCbTlxkiiDzvI
+2026-06-02T14:22:42.804+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAzNjIsImV4cCI6MTc4MDQ3Njc2Mn0.IXHWqik9axaZGQk0uSrNeBdLL5d2BgKCbTlxkiiDzvI
+2026-06-02T14:22:42.808+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:22:42.808+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:22:42.810+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.f.controller.LabelController         : Get all labels for userId: 18
+2026-06-02T14:22:42.810+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-6] c.f.f.s.implementation.LabelServiceImpl  : Fetching all labels for userId: 18
+2026-06-02T14:22:42.810+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAzNjIsImV4cCI6MTc4MDQ3Njc2Mn0.IXHWqik9axaZGQk0uSrNeBdLL5d2BgKCbTlxkiiDzvI
+2026-06-02T14:22:42.811+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAzNjIsImV4cCI6MTc4MDQ3Njc2Mn0.IXHWqik9axaZGQk0uSrNeBdLL5d2BgKCbTlxkiiDzvI
+2026-06-02T14:22:42.814+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:22:42.814+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:22:42.814+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.f.controller.NoteController          : Get all notes for userId: 18
+2026-06-02T14:22:42.816+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 18
+2026-06-02T14:22:47.140+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAzNjIsImV4cCI6MTc4MDQ3Njc2Mn0.IXHWqik9axaZGQk0uSrNeBdLL5d2BgKCbTlxkiiDzvI
+2026-06-02T14:22:47.140+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOCIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTAzNjIsImV4cCI6MTc4MDQ3Njc2Mn0.IXHWqik9axaZGQk0uSrNeBdLL5d2BgKCbTlxkiiDzvI
+2026-06-02T14:22:47.144+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 18
+2026-06-02T14:22:47.144+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 18
+2026-06-02T14:22:47.147+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.f.controller.UserController          : Delete user request for userId: 18
+2026-06-02T14:22:47.147+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.f.s.implementation.UserServiceImpl   : Deleting user with id: 18
+2026-06-02T14:22:47.179+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-8] c.f.f.s.implementation.UserServiceImpl   : User deleted with id: 18
+2026-06-02T14:22:55.441+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:22:55.441342700
+2026-06-02T14:22:55.441+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:23:52.369+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Auth header: null
+2026-06-02T14:23:52.389+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.f.s.implementation.UserServiceImpl   : Register request aaya: naveengaur343@gmail.com
+2026-06-02T14:23:52.419+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.f.s.implementation.UserServiceImpl   : User saved with id: 19
+2026-06-02T14:23:55.447+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:23:55.447267900
+2026-06-02T14:23:55.451+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:23:55.655+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.fundoo_notes.filter.JwtFilter        : Auth header: null
+2026-06-02T14:23:55.659+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.f.s.implementation.UserServiceImpl   : Login request came : naveengaur343@gmail.com
+2026-06-02T14:23:55.665+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-9] c.f.f.s.implementation.UserServiceImpl   : Token generated for: naveengaur343@gmail.com
+2026-06-02T14:23:55.686+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTA0MzUsImV4cCI6MTc4MDQ3NjgzNX0.SfF3ELNaaq8xIngBYt7p-twQecPj5irtN0q30lUmfT4
+2026-06-02T14:23:55.686+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTA0MzUsImV4cCI6MTc4MDQ3NjgzNX0.SfF3ELNaaq8xIngBYt7p-twQecPj5irtN0q30lUmfT4
+2026-06-02T14:23:55.686+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTA0MzUsImV4cCI6MTc4MDQ3NjgzNX0.SfF3ELNaaq8xIngBYt7p-twQecPj5irtN0q30lUmfT4
+2026-06-02T14:23:55.686+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTA0MzUsImV4cCI6MTc4MDQ3NjgzNX0.SfF3ELNaaq8xIngBYt7p-twQecPj5irtN0q30lUmfT4
+2026-06-02T14:23:55.689+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 19
+2026-06-02T14:23:55.689+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 19
+2026-06-02T14:23:55.689+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 19
+2026-06-02T14:23:55.689+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 19
+2026-06-02T14:23:55.689+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.f.controller.LabelController         : Get all labels for userId: 19
+2026-06-02T14:23:55.689+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-3] c.f.f.s.implementation.LabelServiceImpl  : Fetching all labels for userId: 19
+2026-06-02T14:23:55.689+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.f.controller.NoteController          : Get all notes for userId: 19
+2026-06-02T14:23:55.689+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-4] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 19
+2026-06-02T14:23:55.699+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTA0MzUsImV4cCI6MTc4MDQ3NjgzNX0.SfF3ELNaaq8xIngBYt7p-twQecPj5irtN0q30lUmfT4
+2026-06-02T14:23:55.699+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.fundoo_notes.filter.JwtFilter        : Auth header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTA0MzUsImV4cCI6MTc4MDQ3NjgzNX0.SfF3ELNaaq8xIngBYt7p-twQecPj5irtN0q30lUmfT4
+2026-06-02T14:23:55.699+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTA0MzUsImV4cCI6MTc4MDQ3NjgzNX0.SfF3ELNaaq8xIngBYt7p-twQecPj5irtN0q30lUmfT4
+2026-06-02T14:23:55.699+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.fundoo_notes.filter.JwtFilter        : Token extracted: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOSIsImVtYWlsIjoibmF2ZWVuZ2F1cjM0M0BnbWFpbC5jb20iLCJpYXQiOjE3ODAzOTA0MzUsImV4cCI6MTc4MDQ3NjgzNX0.SfF3ELNaaq8xIngBYt7p-twQecPj5irtN0q30lUmfT4
+2026-06-02T14:23:55.703+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 19
+2026-06-02T14:23:55.703+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 19
+2026-06-02T14:23:55.703+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : UserId from token: 19
+2026-06-02T14:23:55.703+05:30 DEBUG 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.fundoo_notes.filter.JwtFilter        : Authentication set for userId: 19
+2026-06-02T14:23:55.704+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.f.controller.NoteController          : Get all notes for userId: 19
+2026-06-02T14:23:55.704+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.f.controller.LabelController         : Get all labels for userId: 19
+2026-06-02T14:23:55.704+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-5] c.f.f.s.implementation.LabelServiceImpl  : Fetching all labels for userId: 19
+2026-06-02T14:23:55.705+05:30  INFO 22476 --- [fundoo-notes] [http-nio-8080-exec-7] c.f.f.s.implementation.NoteServiceImpl   : Fetching all notes for userId: 19
+2026-06-02T14:24:55.449+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:24:55.449284200
+2026-06-02T14:24:55.464+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:25:55.445+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:25:55.445365600
+2026-06-02T14:25:55.456+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:26:55.446+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:26:55.446041500
+2026-06-02T14:26:55.449+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:27:55.470+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:27:55.469657300
+2026-06-02T14:27:55.503+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:28:55.446+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:28:55.446196200
+2026-06-02T14:28:55.460+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:29:55.458+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:29:55.458823500
+2026-06-02T14:29:55.462+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:30:55.459+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:30:55.459579500
+2026-06-02T14:30:55.464+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:31:55.466+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:31:55.465335
+2026-06-02T14:31:55.472+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:32:55.450+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:32:55.450755500
+2026-06-02T14:32:55.454+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:33:55.444+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:33:55.444385100
+2026-06-02T14:33:55.448+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:34:55.455+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Checking reminders at: 2026-06-02T14:34:55.455135300
+2026-06-02T14:34:55.459+05:30  INFO 22476 --- [fundoo-notes] [scheduling-1] c.f.f.s.i.ReminderSchedulerImpl          : Found 0 pending reminders
+2026-06-02T14:35:23.519+05:30  INFO 22476 --- [fundoo-notes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2026-06-02T14:35:23.670+05:30  INFO 22476 --- [fundoo-notes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2026-06-02T14:35:23.715+05:30  INFO 22476 --- [fundoo-notes] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-02T14:35:23.871+05:30  INFO 22476 --- [fundoo-notes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-06-02T14:35:24.246+05:30  INFO 22476 --- [fundoo-notes] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-02T14:35:24.286+05:30  INFO 22476 --- [fundoo-notes] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-02T14:35:24.312+05:30  INFO 22476 --- [fundoo-notes] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
