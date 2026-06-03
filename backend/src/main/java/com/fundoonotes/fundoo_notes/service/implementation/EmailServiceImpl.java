@@ -21,6 +21,7 @@ public class EmailServiceImpl implements EmailService {
     @Override
     public void sendOtpEmail(String toEmail, String otp) {
         try {
+            log.info("Sending OTP email FROM: {} TO: {}", fromEmail, toEmail);
             SimpleMailMessage message = new SimpleMailMessage();
             message.setFrom(fromEmail);
             message.setTo(toEmail);
@@ -47,6 +48,7 @@ public class EmailServiceImpl implements EmailService {
     @Override
     public void sendEmail(String to, String subject, String body) {
         try {
+            log.info("Sending email FROM: {} TO: {}", fromEmail, to);
             SimpleMailMessage message = new SimpleMailMessage();
             message.setFrom(fromEmail);
             message.setTo(to);
